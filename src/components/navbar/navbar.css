@@ -1,0 +1,69 @@
+.Navbar{
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0 20px;
+    & .logo{
+        padding: 10px;
+        & .logo-title{
+            background-clip: unset;
+            background: linear-gradient(107deg, rgba(242,83,173,1) 0%, rgba(61,0,179,1) 100%);
+            -webkit-background-clip: text; /* For WebKit browsers (Chrome, Safari) */
+            -webkit-text-fill-color: transparent;
+            font-size: 36px;
+            font-weight: 900;
+        }
+    }
+    & .navigation{
+        display: flex;
+        gap: 44px;
+        align-items: center;
+
+        & ul{
+            display: flex;
+            gap: 16px;
+            list-style: none;
+            cursor: pointer;
+            & li{
+                font-size: 24px;
+                font-weight: 500;
+                letter-spacing: 0.05rem;
+                color: rgb(32, 32, 32);
+                &:hover{
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
+        & .signups{
+            display: flex;
+            gap: 12px;
+            & a{
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: 0.05rem;
+                padding: 4px 8px;
+                border: 2px solid #3D00B3;
+                border-radius: 8px;
+                cursor: pointer;
+                color: #3D00B3; 
+
+                &:hover {
+                    background-color: #3D00B3;
+                    color: white;
+                }
+            }
+            & :last-child{
+                border: 2px solid #F253AD;
+                color: #F253AD;
+                &:hover {
+                    background-color: #F253AD;
+                    color: white;
+                }
+            }
+        }
+    }
+}
