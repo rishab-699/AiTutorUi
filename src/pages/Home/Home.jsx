@@ -2,6 +2,7 @@ import React from 'react'
 import './home.css'
 import Navbar from '../../components/navbar/Navbar'
 import img from '../../images/AiBanner.jpg'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
                 with explanation.
             </span>
             <div className="links">
-                <button>Ask Questions</button>
+                <button> <Link to="/chat"> Ask Questions</Link></button>
             </div>
         </div>
         <div className="right">
